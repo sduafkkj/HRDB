@@ -1,0 +1,8 @@
+F:\vs2019创建资源\HrDB\HrIDAO\bin\Debug\HrIDAO.dll
+F:\vs2019创建资源\HrDB\HrIDAO\bin\Debug\HrIDAO.pdb
+F:\vs2019创建资源\HrDB\HrIDAO\bin\Debug\HrModell.dll
+F:\vs2019创建资源\HrDB\HrIDAO\bin\Debug\HrModell.pdb
+F:\vs2019创建资源\HrDB\HrIDAO\obj\Debug\HrIDAO.csprojAssemblyReference.cache
+F:\vs2019创建资源\HrDB\HrIDAO\obj\Debug\HrIDAO.csproj.CopyComplete
+F:\vs2019创建资源\HrDB\HrIDAO\obj\Debug\HrIDAO.dll
+F:\vs2019创建资源\HrDB\HrIDAO\obj\Debug\HrIDAO.pdb

@@ -1,0 +1,8 @@
+F:\vs2019创建资源\HrDB\HrIBLL\bin\Debug\HrIBLL.dll
+F:\vs2019创建资源\HrDB\HrIBLL\bin\Debug\HrIBLL.pdb
+F:\vs2019创建资源\HrDB\HrIBLL\bin\Debug\HrModell.dll
+F:\vs2019创建资源\HrDB\HrIBLL\bin\Debug\HrModell.pdb
+F:\vs2019创建资源\HrDB\HrIBLL\obj\Debug\HrIBLL.csprojAssemblyReference.cache
+F:\vs2019创建资源\HrDB\HrIBLL\obj\Debug\HrIBLL.csproj.CopyComplete
+F:\vs2019创建资源\HrDB\HrIBLL\obj\Debug\HrIBLL.dll
+F:\vs2019创建资源\HrDB\HrIBLL\obj\Debug\HrIBLL.pdb

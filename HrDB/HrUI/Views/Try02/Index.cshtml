@@ -1,0 +1,197 @@
+﻿@model IEnumerable<HrModell.HumenModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>dd
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.hfd_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.human_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.first_kind_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.first_kind_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.second_kind_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.second_kind_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.third_kind_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.third_kind_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.human_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.salary_standard_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.salary_standard_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.salary_sum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.demand_salaray_sum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.paid_salary_sum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.statu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.jb)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.jt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.wc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.wx)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.jl)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.jx)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.yk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.zq)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.grid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sgrd)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.hfd_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.human_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.first_kind_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.first_kind_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.second_kind_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.second_kind_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.third_kind_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.third_kind_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.human_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary_standard_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary_standard_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary_sum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.demand_salaray_sum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paid_salary_sum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.statu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gw)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.wc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.wx)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jx)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yk)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.zq)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sgrd)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.hfd_id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.hfd_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.hfd_id })
+        </td>
+    </tr>
+    }
+    
+    </table>
+</body>
+</html>

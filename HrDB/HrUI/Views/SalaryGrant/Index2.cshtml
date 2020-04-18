@@ -1,0 +1,126 @@
+﻿@using HrModell;
+@{
+    Layout = null;
+}
+@{
+    var id="";
+    var list = ViewData["list"] as List<DataBag>;
+    var xcz = ViewData["xcz"];
+    var countr = ViewData["countr"];
+    var zq = ViewData["zq"];
+    var jg = ViewData["jg"];
+    var index = 0;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+    <link href="~/css/table.css" rel="stylesheet" />
+    <script src="~/javaScript/jquery-1.7.2.js"></script>
+    <script src="~/javaScript/vue-2.4.0.js"></script>
+    <style type="text/css">
+        /*2个点*/
+        .v-enter, .v-leave-to {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        /*2个时间段*/
+        .v-enter-active, .v-leave-active {
+            transition: all 2s ease;
+        }
+
+        tr:hover {
+            background-color: red;
+            transition: all 1s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <table width="100%">
+        <tr>
+            <td colspan="2" style="text-align: left">
+                <font color="black">
+                    您正在做的业务是：人力资源--薪酬标准管理--薪酬发放登记(负责人控制)
+                </font>
+
+            </td>
+        </tr>
+
+    </table>
+    <br>
+    薪酬总数:<span>@xcz</span>，
+    总人数:<span>@countr</span>，基本薪酬总数:<span>@zq</span>，实发总额:0。
+    <table width="100%" border="1" cellpadding=0 cellspacing=1
+           bordercolorlight=#848284 bordercolordark=#eeeeee
+           class="TABLE_STYLE1">
+        <thead is="transition-group" appear>
+            <tr>
+                <td width="10%" class="TD_STYLE1">
+                    <span>序号</span>
+                </td>
+                <td width="40%" class="TD_STYLE1">
+                    <span>I级机构名称</span>
+                </td>
+                <td width="10%" class="TD_STYLE1">
+                    <span>人数</span>
+                </td>
+                <td width="10%" class="TD_STYLE1">
+                    基本薪酬总额(元)
+                </td>
+                <td width="10%" class="TD_STYLE1">
+                    登记
+                </td>
+            </tr>
+        </thead>
+        @foreach (var item in list)
+        {
+            index++;
+            id= "";
+    <tbody is="transition-group" appear>
+        <tr class="TD_STYLE2"  key="@index">
+            <td>
+                @index
+            </td>
+            <td>
+                @item.name
+
+            </td>
+            <td>
+                @item.count
+            </td>
+            <td>
+                @item.moneysum
+            </td>
+            <td>
+                @for (int i = 0; i < item.id.Count; i++)
+                {
+                    if (i == item.count - 1)
+                    {
+                        id += @item.id[i] + "," + jg + "";
+                    }
+                    else
+                    {
+                        id += @item.id[i] + ",";
+                    }
+
+                }
+                @if (item.count == 0)
+                {
+                    <span style="color:deepskyblue">人数为0无法登记</span>
+                }
+                else
+                {
+                    <a href="/SalaryGrant/QueryList/@id">登记</a>
+                }
+            </td>
+        </tr>
+    </tbody>
+        }
+   
+    </table>
+
+</body>
+</html>

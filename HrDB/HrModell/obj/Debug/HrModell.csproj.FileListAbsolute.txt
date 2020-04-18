@@ -1,0 +1,4 @@
+F:\vs2019创建资源\HrDB\HrModell\bin\Debug\HrModell.dll
+F:\vs2019创建资源\HrDB\HrModell\bin\Debug\HrModell.pdb
+F:\vs2019创建资源\HrDB\HrModell\obj\Debug\HrModell.dll
+F:\vs2019创建资源\HrDB\HrModell\obj\Debug\HrModell.pdb

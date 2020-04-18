@@ -1,0 +1,12 @@
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrBLL.dll
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrBLL.pdb
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrIBLL.dll
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrIDAO.dll
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrModell.dll
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrIBLL.pdb
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrIDAO.pdb
+F:\vs2019创建资源\HrDB\HrBLL\bin\Debug\HrModell.pdb
+F:\vs2019创建资源\HrDB\HrBLL\obj\Debug\HrBLL.csprojAssemblyReference.cache
+F:\vs2019创建资源\HrDB\HrBLL\obj\Debug\HrBLL.csproj.CopyComplete
+F:\vs2019创建资源\HrDB\HrBLL\obj\Debug\HrBLL.dll
+F:\vs2019创建资源\HrDB\HrBLL\obj\Debug\HrBLL.pdb
